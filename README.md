@@ -62,6 +62,7 @@ UserManagement-Project/
 │   └── NewUsers.csv                    # Sample employee data
 └── Screenshots/
     └── [Project implementation screenshots]
+|___ README.md
 |___ UserAuditReport.txt
 ```
 
