@@ -21,6 +21,7 @@ An enterprise-level Active Directory user lifecycle management system built with
 - Network drive mapping (H: drive)
 - Security group assignment
 - Password policy enforcement (change on first login)
+<img width="906" height="909" alt="Screenshot 2025-11-04 164052" src="https://github.com/user-attachments/assets/6361209b-b502-4636-a7e5-4bd1e5c8b46d" />
 
 ### 2. Secure User Offboarding
 - Interactive offboarding workflow
@@ -29,6 +30,7 @@ An enterprise-level Active Directory user lifecycle management system built with
 - Automated home folder backup with timestamps
 - Security group removal
 - Audit trail creation
+<img width="854" height="792" alt="Screenshot 2025-11-04 233738" src="https://github.com/user-attachments/assets/ed604834-a323-4e22-b3fe-596fd50662c4" />
 
 ### 3. Comprehensive Auditing
 - Automated user report generation
@@ -36,11 +38,13 @@ An enterprise-level Active Directory user lifecycle management system built with
 - Department-based user breakdown
 - Detailed user information export
 - Timestamped audit logs
+<img width="730" height="881" alt="Screenshot 2025-11-04 235842" src="https://github.com/user-attachments/assets/07b972f9-b409-4414-8d84-655c8c47ceda" />
 
 ### 4. Group Policy Management
 - Department-specific GPOs
 - Role-based access control
 - Differentiated security policies
+<img width="754" height="501" alt="Screenshot 2025-11-04 233847" src="https://github.com/user-attachments/assets/c0a81692-1812-4510-95d4-1a4bddd401d1" />
 
 ## 📁 Project Structure
 ```
