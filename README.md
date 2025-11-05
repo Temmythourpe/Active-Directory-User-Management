@@ -44,9 +44,9 @@ An enterprise-level Active Directory user lifecycle management system built with
 - Department-specific GPOs
 - Role-based access control
 - Differentiated security policies
-<img width="754" height="501" alt="Screenshot 2025-11-04 233847" src="https://github.com/user-attachments/assets/c0a81692-1812-4510-95d4-1a4bddd401d1" />
+<img width="751" height="507" alt="Screenshot 2025-11-05 015823" src="https://github.com/user-attachments/assets/03487d1c-66c7-432f-8b4a-82c3375949db" />
 
-## 📁 Project Structure
+## Project Structure
 ```
 UserManagement-Project/
 ├── Scripts/
