@@ -1,0 +1,112 @@
+﻿====================================================================================================
+MYLAB DOMAIN USER AUDIT REPORT
+Generated: 2025-11-04 23:59:31
+====================================================================================================
+
+SUMMARY STATISTICS:
+-------------------
+Total Users: 8
+Enabled Users: 7
+Disabled Users: 1
+
+USERS BY DEPARTMENT:
+--------------------
+Communication: 1 users
+Engineering: 1 users
+Finance: 1 users
+HR: 1 users
+IT: 2 users
+Legal: 1 users
+Sales: 1 users
+
+DETAILED USER LIST:
+====================================================================================================
+
+Username: lisa.garcia
+Full Name: Lisa Garcia
+Department: Communication
+Job Title: Communications Director
+Status: Enabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\lisa.garcia
+Security Groups: GRP_Communication
+----------------------------------------------------------------------------------------------------
+
+Username: robert.martinez
+Full Name: Robert Martinez
+Department: Engineering
+Job Title: Software Engineer
+Status: Enabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\robert.martinez
+Security Groups: GRP_Engineering
+----------------------------------------------------------------------------------------------------
+
+Username: emily.brown
+Full Name: Emily Brown
+Department: Finance
+Job Title: Financial Analyst
+Status: Enabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\emily.brown
+Security Groups: GRP_Finance
+----------------------------------------------------------------------------------------------------
+
+Username: sarah.johnson
+Full Name: Sarah Johnson
+Department: HR
+Job Title: HR Manager
+Status: Enabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\sarah.johnson
+Security Groups: GRP_HR
+----------------------------------------------------------------------------------------------------
+
+Username: jessica.davis
+Full Name: Jessica Davis
+Department: IT
+Job Title: Help Desk Technician
+Status: Enabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\jessica.davis
+Security Groups: GRP_IT
+----------------------------------------------------------------------------------------------------
+
+Username: john.smith
+Full Name: John Smith
+Department: IT
+Job Title: System Administrator
+Status: Enabled
+Created: 2025-11-04
+Last Logon: 2025-11-04
+Home Directory: \\LAB-Server-01\UserHome$\john.smith
+Security Groups: GRP_IT
+----------------------------------------------------------------------------------------------------
+
+Username: david.jones
+Full Name: David Jones
+Department: Legal
+Job Title: Legal Counsel
+Status: Enabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\david.jones
+Security Groups: GRP_Legal
+----------------------------------------------------------------------------------------------------
+
+Username: michael.williams
+Full Name: Michael Williams
+Department: Sales
+Job Title: Sales Representative
+Status: Disabled
+Created: 2025-11-04
+Last Logon: Never
+Home Directory: \\LAB-Server-01\UserHome$\michael.williams
+Security Groups: 
+----------------------------------------------------------------------------------------------------
+

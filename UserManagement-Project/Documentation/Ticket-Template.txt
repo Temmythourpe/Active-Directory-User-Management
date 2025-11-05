@@ -1,0 +1,38 @@
+===========================================
+MYLAB IT DEPARTMENT - USER MANAGEMENT TICKET
+===========================================
+
+TICKET #: 2024-001
+DATE: [Current Date]
+REQUESTED BY: HR Department
+ASSIGNED TO: IT Administrator
+
+-------------------------------------------
+REQUEST TYPE: New User Onboarding
+-------------------------------------------
+
+EMPLOYEE DETAILS:
+- Full Name: John Smith
+- Department: IT
+- Job Title: System Administrator
+- Start Date: 04.10.2025
+
+ACTIONS COMPLETED:
+☑ Created AD user account (john.smith)
+☑ Assigned to IT department OU
+☑ Added to GRP_IT security group
+☑ Created home directory (H: drive)
+☑ Applied GPO_IT_Department policies
+☑ Set temporary password: Welcome@2024
+☑ Configured password change at first login
+
+VERIFICATION:
+☑ User can login to domain
+☑ Home drive accessible
+☑ Department policies applied
+
+STATUS: COMPLETED
+COMPLETION DATE: 04.10.2025
+NOTES: User successfully onboarded. Credentials provided to supervisor.
+
+===========================================

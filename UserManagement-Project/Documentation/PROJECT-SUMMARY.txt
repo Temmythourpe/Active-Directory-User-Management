@@ -1,0 +1,140 @@
+===============================================================================
+PROJECT 1: AUTOMATED USER ONBOARDING & OFFBOARDING SYSTEM
+===============================================================================
+
+PROJECT OVERVIEW:
+This project demonstrates enterprise-level user lifecycle management using 
+Active Directory, PowerShell automation, and Group Policy in a Windows Server 
+environment.
+
+ENVIRONMENT:
+- Domain: mylab.com
+- Domain Controller: LAB-Server-01 (Windows Server)
+- Client: Windows11-Lab (Windows 11)
+- Departments: IT, HR, Sales, Finance, Legal, Communication, Engineering
+
+===============================================================================
+COMPONENTS CREATED:
+===============================================================================
+
+1. ACTIVE DIRECTORY STRUCTURE:
+   ✓ Organizational Units (OUs):
+     - MyLab_Users (parent OU with 7 department sub-OUs)
+     - MyLab_Groups (security groups OU)
+     - Disabled_Users (for offboarded accounts)
+   
+   ✓ Security Groups:
+     - GRP_IT, GRP_HR, GRP_Sales, GRP_Finance, GRP_Legal, 
+       GRP_Communication, GRP_Engineering
+
+2. AUTOMATED SCRIPTS:
+   ✓ New-UserOnboarding.ps1
+     - Reads employee data from CSV file
+     - Creates AD user accounts with standardized naming
+     - Provisions home directories with proper permissions
+     - Assigns users to department OUs and security groups
+     - Sets temporary passwords with forced change on first login
+   
+   ✓ Remove-UserOffboarding.ps1
+     - Interactive user offboarding process
+     - Disables user accounts
+     - Moves users to Disabled_Users OU
+     - Backs up home folders with timestamps
+     - Removes from all security groups
+     - Creates audit trail
+   
+   ✓ Remove-Users.ps1
+     - Cleanup/rollback script for testing
+     - Removes users and home directories
+   
+   ✓ Get-UserAuditReport.ps1
+     - Generates comprehensive user reports
+     - Includes statistics and department breakdowns
+     - Creates timestamped audit logs
+
+3. GROUP POLICY OBJECTS (GPOs):
+   ✓ Department-specific policies created for all 7 departments
+   ✓ Configured role-based access controls
+   ✓ Example policies:
+     - IT Department: Full access to system tools
+     - Sales Department: Restricted desktop customization
+
+4. NETWORK INFRASTRUCTURE:
+   ✓ Home directory server share (\\LAB-Server-01\UserHome$)
+   ✓ Automatic drive mapping (H: drive)
+   ✓ Proper NTFS and share permissions
+
+5. DOCUMENTATION:
+   ✓ Ticket template for IT service requests
+   ✓ Complete audit trail of all changes
+   ✓ Detailed troubleshooting documentation
+
+===============================================================================
+SKILLS DEMONSTRATED:
+===============================================================================
+
+TECHNICAL SKILLS:
+✓ Active Directory administration
+✓ PowerShell scripting and automation
+✓ Group Policy management
+✓ File server configuration and permissions
+✓ User lifecycle management
+✓ CSV data processing
+✓ Network troubleshooting
+✓ Windows Server administration
+
+PROFESSIONAL SKILLS:
+✓ Problem-solving and troubleshooting
+✓ Documentation and reporting
+✓ Process automation
+✓ Security best practices
+✓ IT service management workflows
+✓ Attention to detail
+
+===============================================================================
+CHALLENGES OVERCOME:
+===============================================================================
+
+1. Security group naming inconsistency
+   - Developed cleanup procedures and validation processes
+
+2. Network path resolution issues
+   - Diagnosed DNS/hostname problems
+   - Updated scripts with correct server references
+
+3. GPO management and linking
+   - Learned proper GPO creation and linking workflows
+
+4. PowerShell array handling
+   - Implemented proper null checking and array syntax
+
+5. Multi-OU user searching
+   - Expanded script scope to handle organizational complexity
+
+===============================================================================
+BUSINESS VALUE:
+===============================================================================
+
+This solution provides:
+✓ Reduced onboarding time from hours to minutes
+✓ Consistent user provisioning with zero manual errors
+✓ Complete audit trails for compliance
+✓ Secure offboarding process with data retention
+✓ Easy-to-maintain and scalable infrastructure
+✓ Professional IT service management approach
+
+===============================================================================
+TESTING RESULTS:
+===============================================================================
+
+✓ Successfully onboarded 8 test users across 7 departments
+✓ All users placed in correct OUs with proper group memberships
+✓ Home directories created with correct permissions
+✓ Drive mapping working on client machines
+✓ Group policies applying correctly
+✓ Offboarding process tested and verified
+✓ Audit reporting functional and accurate
+
+===============================================================================
+PROJECT COMPLETION DATE: [Insert Date]
+===============================================================================

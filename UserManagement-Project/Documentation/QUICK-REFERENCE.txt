@@ -1,0 +1,141 @@
+===============================================================================
+QUICK REFERENCE GUIDE - USER MANAGEMENT SCRIPTS
+===============================================================================
+
+SCRIPT LOCATIONS: C:\Scripts\
+
+===============================================================================
+1. NEW USER ONBOARDING
+===============================================================================
+
+SCRIPT: New-UserOnboarding.ps1
+
+PURPOSE: Automate new user account creation and provisioning
+
+PREREQUISITES:
+- CSV file with user data (C:\Scripts\NewUsers.csv)
+- CSV format: FirstName,LastName,Department,JobTitle
+
+HOW TO RUN:
+1. Open PowerShell ISE as Administrator
+2. Open C:\Scripts\New-UserOnboarding.ps1
+3. Press F5 to run
+4. Review output for success/errors
+
+WHAT IT DOES:
+✓ Creates AD user account (firstname.lastname format)
+✓ Places user in correct department OU
+✓ Creates home folder at C:\DC-Server\UserHome\username
+✓ Maps H: drive to home folder
+✓ Adds user to department security group (GRP_Department)
+✓ Sets temporary password: Welcome@2024
+✓ Forces password change on first login
+
+===============================================================================
+2. USER OFFBOARDING
+===============================================================================
+
+SCRIPT: Remove-UserOffboarding.ps1
+
+PURPOSE: Safely disable and archive departing users
+
+HOW TO RUN:
+1. Open PowerShell ISE as Administrator
+2. Open C:\Scripts\Remove-UserOffboarding.ps1
+3. Press F5 to run
+4. Enter username when prompted (e.g., john.smith)
+5. Confirm with "yes"
+
+WHAT IT DOES:
+✓ Disables user account
+✓ Moves user to Disabled_Users OU
+✓ Backs up home folder to C:\DC-Server\UserBackups\
+✓ Removes from all security groups (except Domain Users)
+✓ Adds offboarding date to description field
+
+===============================================================================
+3. USER AUDIT REPORT
+===============================================================================
+
+SCRIPT: Get-UserAuditReport.ps1
+
+PURPOSE: Generate comprehensive user reports
+
+HOW TO RUN:
+1. Open PowerShell ISE as Administrator
+2. Open C:\Scripts\Get-UserAuditReport.ps1
+3. Press F5 to run
+4. Report automatically opens in Notepad
+
+OUTPUT LOCATION: C:\Scripts\UserAuditReport-[timestamp].txt
+
+REPORT INCLUDES:
+✓ Summary statistics (total, enabled, disabled users)
+✓ User count by department
+✓ Detailed user information:
+  - Username and full name
+  - Department and job title
+  - Account status
+  - Creation date and last logon
+  - Home directory path
+  - Security group memberships
+
+===============================================================================
+4. CLEANUP/ROLLBACK (TESTING ONLY)
+===============================================================================
+
+SCRIPT: Remove-Users.ps1
+
+PURPOSE: Remove test users for clean slate
+
+WARNING: This deletes users and home folders permanently!
+
+HOW TO RUN:
+1. Open PowerShell ISE as Administrator
+2. Open C:\Scripts\Remove-Users.ps1
+3. Press F5 to run
+
+USE CASE: When you need to re-test onboarding scripts
+
+===============================================================================
+TROUBLESHOOTING TIPS
+===============================================================================
+
+ISSUE: Script fails to create user
+FIX: Check if OU path is correct in script
+     Verify security group names match (GRP_Department format)
+
+ISSUE: Home drive not mapping
+FIX: Verify server hostname in script matches actual DC name
+     Check if UserHome$ share exists and has proper permissions
+     Ensure user home directory path is set in AD
+
+ISSUE: User not in correct OU
+FIX: Enable "Advanced Features" in AD Users and Computers (View menu)
+
+ISSUE: GPO not applying
+FIX: Run "gpupdate /force" on client machine
+     Check GPO is linked to correct OU
+     Wait 90 minutes or restart client
+
+===============================================================================
+BEST PRACTICES
+===============================================================================
+
+✓ Always test scripts in lab environment first
+✓ Keep backups before making bulk changes
+✓ Document all changes in ticket system
+✓ Review audit reports regularly
+✓ Update CSV file before each onboarding batch
+✓ Verify offboarded users before permanent deletion
+✓ Run audit reports monthly for compliance
+
+===============================================================================
+SUPPORT CONTACTS
+===============================================================================
+
+Script Issues: IT Administrator
+AD Issues: Domain Administrator  
+Policy Issues: Security Team
+
+===============================================================================
