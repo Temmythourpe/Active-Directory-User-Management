@@ -106,27 +106,6 @@ UserManagement-Project/
 
 Reports are saved with timestamps in the Scripts folder.
 
-## Skills Demonstrated
-
-### Technical Skills
-- Active Directory administration
-- PowerShell scripting and automation
-- Group Policy Object (GPO) management
-- Windows Server administration
-- File server configuration
-- NTFS and share permissions
-- Network troubleshooting
-- CSV data processing
-
-### Professional Skills
-- User lifecycle management
-- IT service management workflows
-- Security best practices
-- Problem-solving and troubleshooting
-- Technical documentation
-- Process automation
-- Attention to detail
-
 ## Challenges & Solutions
 
 ### Challenge 1: Security Group Naming Consistency
