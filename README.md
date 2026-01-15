@@ -4,6 +4,9 @@
 
 An enterprise-level Active Directory user lifecycle management system built with PowerShell automation, demonstrating professional IT administration skills for user provisioning, deprovisioning, and auditing.
 
+<img width="508" height="634" alt="AD_User_Manage,ment_Architecture-Page-2 drawio (1)" src="https://github.com/user-attachments/assets/adda40d1-5500-4083-9b5b-97f3597ac016" />
+
+
 ## Infrastructure
 
 - **Domain:** mylab.com
