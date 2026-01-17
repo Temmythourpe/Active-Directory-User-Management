@@ -1,5 +1,12 @@
 # Automated User Onboarding & Offboarding System
 
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=powershell&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?logo=windows&logoColor=white)
+![Group Policy](https://img.shields.io/badge/Group_Policy-0078D4?logo=windows&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?logo=windows&logoColor=white)
+![Automation](https://img.shields.io/badge/Automation-FF6B6B?logo=azuredevops&logoColor=white)
+![Documentation](https://img.shields.io/badge/Documentation-4CAF50?logo=readthedocs&logoColor=white)
+
 ## Project Overview
 
 An enterprise-level Active Directory user lifecycle management system built with PowerShell automation, demonstrating professional IT administration skills for user provisioning, deprovisioning, and auditing.
